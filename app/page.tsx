@@ -1,11 +1,11 @@
-import Header from "@/components/Header";
+import Originals from "@/components/Originals";
 import Sidebar from "@/components/Sidebar";
 import Statistics from "@/components/Statistics";
-import React from "react";
 
 const Home = () => {
   return (
     <div className="ml-24">
+      <Originals />
       <Statistics />
     </div>
   );

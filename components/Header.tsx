@@ -13,14 +13,14 @@ const Navbar = () => {
     console.log(`the menu is ${open}`);
   };
   return (
-    <>
+    <div className="h-full">
       <nav className="bg-dark relative z-50">
         <div className="sm:px-6 sm:py-5 py-2 px-3 mx-auto flex justify-between items-center max-w-[1700px]">
           <div className="flex items-center justify-center gap-4">
             <BiMenuAltLeft
               size={30}
               onClick={handleMenu}
-              className={`text-white lg:text-lg md:text-base text-sm sm:hidden block cursor-pointer p-[0.1rem] rounded-sm ${
+              className={`text-white lg:text-lg md:text-base text-sm sm:hidden block cursor-pointer p-[0.1rem] rounded-sm transition-all ${
                 open ? "bg-transparent" : " bg-white/30"
               }`}
             />
@@ -43,7 +43,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between md:gap-7 gap-4">
             <AiOutlineGlobal
               size={36}
-              className="text-white cursor-pointer hover:text-white/80 transition-all duration-100 md:block hidden"
+              className="text-white cursor-pointer hover:text-white/80 transition-all md:block hidden"
             />
             <div className="md:p-2 px-[2px] rounded-md border  flex justify-start items-center ">
               <BiSearchAlt2
@@ -56,20 +56,20 @@ const Navbar = () => {
                 className="text-white text-[16px] pr-24 bg-transparent hidden md:block placeholder:uppercase placeholder:text-white placeholder:text-[14px] pl-3 outline-none"
               />
             </div>
-            <button className="cursor-pointer transition-all hover:bg-primary/80 duration-100 uppercase text-white md:px-12 px-5 rounded-md sm:py-2 py-1 bg-primary font-medium border-primary border-2 md:text-[16px] text-[10px] whitespace-nowrap">
+            <button className="cursor-pointer transition-all hover:bg-primary/80 uppercase text-white md:px-12 px-5 rounded-md sm:py-2 py-1 bg-primary font-medium border-primary border-2 md:text-[16px] text-[10px] whitespace-nowrap">
               sign in
             </button>
           </div>
         </div>
       </nav>
-      <div
+      {/* <div
         className={`absolute ${
           open ? "-left-28" : "left-0"
         } w-max h-full top-0 transition-all duration-200`}
       >
         <Sidebar />
-      </div>
-    </>
+      </div> */}
+    </div>
   );
 };
 

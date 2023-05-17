@@ -14,7 +14,7 @@ const Sidebar = () => {
       <li className="overflow-hidden group-hover:pr-20 border-b-[0.25px] border-[#55565A] mx-3 duration-200 transition-all">
         <Link
           className="py-5 flex justify-start items-center gap-7 md:px-3.5 sm:px-0"
-          href="/coinsPage"
+          href=""
         >
           <Image
             src={icon}
@@ -31,17 +31,15 @@ const Sidebar = () => {
     );
   };
   return (
-    <div className="bg-[#1a1a1a] w-max group h-full top-0 left-0 z-10 duration-200 transition-all hover:overflow-scroll overflow-hidden absolute">
-      <nav className="flex flex-col justify-start items-center h-full md:mt-36 sm:mt-[6.3rem] mt-[4.5rem]">
-        <ul>
+    <div className="bg-[#1a1a1a] w-max h-screen group top-0 left-0 z-10 transition-all absolute">
+      <nav className="flex flex-col justify-start h-full items-center md:mt-36 sm:mt-[6.3rem] mt-[4.5rem]">
+        <ul className="h-full">
           <Tab icon={Coins} desc="Coins" title="Coins" />
           <Tab icon={Wheel} desc="Wheel" title="Wheel" />
           <Tab icon={Rocket} desc="Rocket" title="Rockets" />
           <Tab icon={Billard} desc="Billard" title="Billiard" />
           <Tab icon={Flag} desc="Flag" title="Race" />
           <Tab icon={Security} desc="Security" title="Security" />
-        </ul>
-        <ul className="overflow-hidden self-start">
           <li className="overflow-hidden group-hover:pr-20 mx-3 duration-200 transition-all mt-16">
             <Link
               className="py-5 flex justify-start items-center gap-7 md:px-3.5 sm:px-0"
