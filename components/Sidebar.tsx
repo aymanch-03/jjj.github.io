@@ -21,9 +21,9 @@ const Sidebar = () => {
             alt={desc}
             width={40}
             height={40}
-            className="pl-1 w-[40px]"
+            className="p-1.5"
           />
-          <h3 className="hover:text-white/70 uppercase text-white text-lg text-left  hidden group-hover:block duration-75 transition-all">
+          <h3 className="hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left  hidden group-hover:block duration-75 transition-all">
             {title}
           </h3>
         </Link>
@@ -31,7 +31,7 @@ const Sidebar = () => {
     );
   };
   return (
-    <div className="absolute left-0 top-0 bg-[#1a1a1a] w-max group h-full z-10 duration-200 transition-all overflow-scroll">
+    <div className="bg-[#1a1a1a] w-max group h-full top-0 left-0 z-10 duration-200 transition-all overflow-scroll absolute">
       <nav className="flex flex-col justify-start items-center h-full mt-36">
         <ul className="overflow-hidden">
           <Tab icon={Coins} desc="Coins" title="Coins" />
@@ -44,7 +44,7 @@ const Sidebar = () => {
         <ul className="overflow-hidden self-start">
           <li className="overflow-hidden group-hover:pr-20 mx-3 duration-200 transition-all mt-16">
             <Link
-              className=" py-5 flex justify-start items-center gap-7 px-3.5"
+              className="py-5 flex justify-start items-center gap-7 px-3.5"
               href="/coinsPage"
             >
               <Image
@@ -52,9 +52,9 @@ const Sidebar = () => {
                 alt="Support"
                 width={40}
                 height={40}
-                className="pl-1 w-[40px]"
+                className="p-1.5"
               />
-              <h3 className="hover:text-white/70 uppercase text-white text-lg text-left hidden group-hover:block duration-75 transition-all">
+              <h3 className="hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left hidden group-hover:block duration-75 transition-all">
                 Support
               </h3>
             </Link>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import "@/styles/globals.css";
@@ -19,6 +20,7 @@ export default function RootLayout({
         <Sidebar />
         {children}
       </main>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     </html>
   );
 }
