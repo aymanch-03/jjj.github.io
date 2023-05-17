@@ -20,8 +20,8 @@ const Navbar = () => {
             <BiMenuAltLeft
               size={30}
               onClick={handleMenu}
-              className={`text-white lg:text-lg md:text-base text-sm sm:hidden block cursor-pointer p-2 rounded-sm ${
-                open ? "bg-white/30" : "bg-transparent"
+              className={`text-white lg:text-lg md:text-base text-sm sm:hidden block cursor-pointer p-[0.1rem] rounded-sm ${
+                open ? "bg-transparent" : " bg-white/30"
               }`}
             />
             <Link href="/" className="cursor-pointer">

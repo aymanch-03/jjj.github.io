@@ -31,7 +31,7 @@ const Sidebar = () => {
     );
   };
   return (
-    <div className="bg-[#1a1a1a] w-max group h-full top-0 left-0 z-10 duration-200 transition-all hover:overflow-scroll overflow-auto absolute">
+    <div className="bg-[#1a1a1a] w-max group h-full top-0 left-0 z-10 duration-200 transition-all hover:overflow-scroll overflow-hidden absolute">
       <nav className="flex flex-col justify-start items-center h-full md:mt-36 sm:mt-[6.3rem] mt-[4.5rem]">
         <ul>
           <Tab icon={Coins} desc="Coins" title="Coins" />
