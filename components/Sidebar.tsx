@@ -73,7 +73,7 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
                 height={40}
                 className="md:p-2 p-2.5"
               />
-              <h3 className="hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left sm:hidden sm:group-hover:bloc duration-75 transition-all md:pl-0.5 pl-1">
+              <h3 className="hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left sm:hidden sm:group-hover:block duration-75 transition-all md:pl-0.5 pl-1">
                 Support
               </h3>
             </Link>

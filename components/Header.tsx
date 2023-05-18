@@ -25,8 +25,8 @@ const Navbar = () => {
         <div className="sm:px-6 sm:py-5 py-2 px-5 mx-auto flex justify-between items-center max-w-[1700px]">
           <div className="flex items-center justify-center gap-4">
             <RiMenuUnfoldFill
-              size={30}
               onClick={handleMenu}
+              size={30}
               className={`text-white lg:text-lg md:text-base text-sm sm:hidden block cursor-pointer p-[0.1rem] rounded-sm transition-all ${
                 open ? "bg-transparent" : " bg-white/30 rotate-180"
               }`}
