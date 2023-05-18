@@ -22,7 +22,7 @@ const Navbar = () => {
               size={30}
               onClick={handleMenu}
               className={`text-white lg:text-lg md:text-base text-sm sm:hidden block cursor-pointer p-[0.1rem] rounded-sm transition-all ${
-                open ? "bg-transparent rotate-180" : " bg-white/30"
+                open ? "bg-transparent" : " bg-white/30 rotate-180"
               }`}
             />
             <Link href="/" className="cursor-pointer">
@@ -68,7 +68,10 @@ const Navbar = () => {
           open ? "-left-28" : "left-0"
         } w-max h-full top-0 transition-all duration-200`}
       >
-        <Sidebar />
+        <Sidebar
+          reponsponsiveProps={"sm:hidden sm:group-hover:block "}
+          sidebarProps={open ? `-left-30` : `left-0`}
+        />
       </div>
     </div>
   );

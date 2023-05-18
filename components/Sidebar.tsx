@@ -8,10 +8,12 @@ import Rocket from "../public/assets/Tabs/spaceRocket.svg";
 import Support from "../public/assets/Tabs/support.svg";
 import Wheel from "../public/assets/Tabs/wheel.svg";
 
-const Sidebar = () => {
+const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
   const Tab = ({ icon, desc, title, props }: any) => {
     return (
-      <li className="overflow-hidden group-hover:pr-20 border-b-[0.25px] border-[#55565A] mx-3 duration-200 transition-all">
+      <li
+        className={`overflow-hidden group-hover:pr-20 border-b-[0.25px] border-[#55565A] mx-3 duration-200 transition-all`}
+      >
         <Link
           className="py-4 flex justify-start items-center gap-7 md:px-2.5 sm:px-0"
           href=""
@@ -23,7 +25,9 @@ const Sidebar = () => {
             height={40}
             className={`w-[45px] ${props}`}
           />
-          <h3 className="hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left  hidden group-hover:block duration-75 transition-all md:pl-0.5 pl-1">
+          <h3
+            className={`hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left sm:hidden sm:group-hover:block duration-75 transition-all md:pl-0.5 pl-1`}
+          >
             {title}
           </h3>
         </Link>
@@ -31,7 +35,9 @@ const Sidebar = () => {
     );
   };
   return (
-    <div className="bg-[#1a1a1a] w-max min-h-full group top-0 left-0 z-10 transition-all overflow-scroll fixed ">
+    <div
+      className={`bg-[#1a1a1a] w-max min-h-full group ${sidebarProps} top-0 z-10 transition-all overflow-scroll fixed`}
+    >
       <nav className="flex flex-col justify-start min-h-full items-center md:pt-32 sm:pt-[6.3rem] pt-[4.5rem] ">
         <ul className="h-full">
           <Tab icon={Coins} desc="Coins" title="Coins" props="md:p-2 p-2.5" />
