@@ -9,7 +9,7 @@ const Statistics = () => {
         </h3>
         <div className="flex items-center justify-start gap-2.5 pt-5">
           <Image src={Coin} alt="coin" width={30} height={30} />
-          <h1 className="text-white md:text-2xl text-lg font-medium">
+          <h1 className="text-white md:text-2xl text-xl font-medium">
             {stats}
           </h1>
         </div>
@@ -26,7 +26,7 @@ const Statistics = () => {
           <h3 className="text-white/60 md:text-lg text-base font-normal">
             TOTAL BETS PLACED
           </h3>
-          <h1 className="text-white md:text-2xl text-lg pt-5 font-medium">
+          <h1 className="text-white md:text-2xl text-xl pt-5 font-medium">
             2,542,671
           </h1>
         </div>

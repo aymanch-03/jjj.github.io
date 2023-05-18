@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { RiMenuUnfoldFill } from "react-icons/ri";
@@ -9,9 +9,15 @@ import Logo from "../public/assets/jjjLogo.svg";
 import Sidebar from "./Sidebar";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const storedOpenValue = localStorage.getItem("open");
+    setOpen(storedOpenValue ? JSON.parse(storedOpenValue) : false);
+  }, []);
+
   const handleMenu = () => {
-    setOpen(!open);
-    console.log(`the menu is ${open}`);
+    const newOpenValue = !open;
+    setOpen(newOpenValue);
+    localStorage.setItem("open", JSON.stringify(newOpenValue));
   };
   return (
     <div>
