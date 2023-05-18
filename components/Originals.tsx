@@ -4,21 +4,21 @@ const Originals = () => {
   const Games = () => {
     return (
       <Link href="/">
-        <div className="h-[359px] bg-[#A4A4A4] hover:scale-105 trans cursor-pointer"></div>
+        <div className="h-[359px] bg-[#A4A4A4] hover:scale-105 transition-all cursor-pointer"></div>
       </Link>
     );
   };
   return (
-    <div className="p-16">
+    <div className="sm:px-16 px-5 pb-16 md:pt-[10rem] sm:pt-[8rem] pt-[6rem]">
       <div className="w-full items-center flex justify-between">
-        <h1 className="md:text-2xl text-xl text-white font-semibold uppercase">
+        <h1 className="md:text-2xl text-lg text-white font-semibold uppercase">
           {"Jira's originals"}
         </h1>
         <p className="md:text-lg text-base text-white/50 font-light uppercase cursor-pointer hover:text-white/80 all transition-all relative">
           <Link href="/">View all</Link>
         </p>
       </div>
-      <main className="w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-8 sm:gap-4 gap-y-16 grid flex-wrap py-9 overflow-auto">
+      <main className="w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-8 sm:gap-4 gap-y-8 grid flex-wrap py-9 overflow-auto">
         <Games />
         <Games />
         <Games />

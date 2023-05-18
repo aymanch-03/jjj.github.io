@@ -17,7 +17,7 @@ const Statistics = () => {
     );
   };
   return (
-    <div className="p-16 border-y-[0.5px] border-[#fff]/40">
+    <div className="px-12 py-16 border-y-[0.5px] border-[#fff]/40">
       <h1 className=" md:text-2xl text-xl text-white font-semibold uppercase">
         statistics
       </h1>

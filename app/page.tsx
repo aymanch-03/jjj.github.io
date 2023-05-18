@@ -4,10 +4,12 @@ import Statistics from "@/components/Statistics";
 
 const Home = () => {
   return (
-    <div className="ml-24">
-      <Originals />
-      <Statistics />
-    </div>
+    <>
+      <div className="md:ml-24 sm:ml-[4.5rem] mx-auto">
+        <Originals />
+        <Statistics />
+      </div>
+    </>
   );
 };
 

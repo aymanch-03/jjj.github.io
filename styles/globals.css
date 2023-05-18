@@ -7,6 +7,7 @@
 }
 body {
   background-color: #0b080b;
+  height: 100%;
 }
 .flex-center {
   display: flex;

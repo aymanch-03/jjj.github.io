@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <main className="app">
+      <main className="h-full">
         <Header />
 
         {children}

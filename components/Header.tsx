@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { BiMenuAltLeft, BiSearchAlt2 } from "react-icons/bi";
+import { BiSearchAlt2 } from "react-icons/bi";
+import { RiMenuUnfoldFill } from "react-icons/ri";
 import Logo from "../public/assets/jjjLogo.svg";
 import Sidebar from "./Sidebar";
 const Navbar = () => {
@@ -13,15 +14,15 @@ const Navbar = () => {
     console.log(`the menu is ${open}`);
   };
   return (
-    <div className="h-full">
-      <nav className="bg-dark relative z-50">
-        <div className="sm:px-6 sm:py-5 py-2 px-3 mx-auto flex justify-between items-center max-w-[1700px]">
+    <div>
+      <nav className="bg-dark fixed z-50 w-full">
+        <div className="sm:px-6 sm:py-5 py-2 px-5 mx-auto flex justify-between items-center max-w-[1700px]">
           <div className="flex items-center justify-center gap-4">
-            <BiMenuAltLeft
+            <RiMenuUnfoldFill
               size={30}
               onClick={handleMenu}
               className={`text-white lg:text-lg md:text-base text-sm sm:hidden block cursor-pointer p-[0.1rem] rounded-sm transition-all ${
-                open ? "bg-transparent" : " bg-white/30"
+                open ? "bg-transparent rotate-180" : " bg-white/30"
               }`}
             />
             <Link href="/" className="cursor-pointer">
@@ -62,13 +63,13 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      {/* <div
+      <div
         className={`absolute ${
           open ? "-left-28" : "left-0"
         } w-max h-full top-0 transition-all duration-200`}
       >
         <Sidebar />
-      </div> */}
+      </div>
     </div>
   );
 };
