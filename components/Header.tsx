@@ -8,7 +8,7 @@ import { RiMenuUnfoldFill } from "react-icons/ri";
 import Logo from "../public/assets/jjjLogo.svg";
 import Sidebar from "./Sidebar";
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const handleMenu = () => {
     setOpen(!open);
     console.log(`the menu is ${open}`);
@@ -57,7 +57,7 @@ const Navbar = () => {
                 className="text-white text-[16px] pr-24 bg-transparent hidden md:block placeholder:uppercase placeholder:text-white placeholder:text-[14px] pl-3 outline-none"
               />
             </div>
-            <button className="cursor-pointer left- transition-all hover:bg-primary/80 uppercase text-white md:px-12 px-5 rounded-md sm:py-2 py-1 bg-primary font-medium border-primary border-2 md:text-[16px] text-[10px] whitespace-nowrap">
+            <button className="cursor-pointer left- transition-all hover:bg-primary/80 uppercase text-white md:px-12 px-5 rounded-md sm:py-2 py-1 bg-primary font-medium border-primary border-2 md:text-[16px] text-[12px] whitespace-nowrap">
               sign in
             </button>
           </div>

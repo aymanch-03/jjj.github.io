@@ -12,7 +12,7 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
   const Tab = ({ icon, desc, title, props }: any) => {
     return (
       <li
-        className={`overflow-hidden group-hover:pr-20 border-b-[0.25px] border-[#55565A] mx-3 duration-200 transition-all`}
+        className={`overflow-hidden sm:group-hover:pr-20 sm:pr-0 pr-20 border-b-[0.25px] border-[#55565A] mx-3 duration-200 transition-all`}
       >
         <Link
           className="py-4 flex justify-start items-center gap-7 md:px-2.5 sm:px-0"
@@ -61,7 +61,7 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
             title="Security"
             props="md:p-2.5 p-3"
           />
-          <li className="overflow-hidden group-hover:pr-20 mx-3 duration-200 transition-all mt-16">
+          <li className="overflow-hidden sm:group-hover:pr-20 sm:pr-0 pr-20 mx-3 duration-200 transition-all mt-16">
             <Link
               className="py-5 flex justify-center items-center gap-7 md:px-2.5 sm:px-0"
               href="/"
@@ -73,7 +73,7 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
                 height={40}
                 className="md:p-2 p-2.5"
               />
-              <h3 className="hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left hidden group-hover:block duration-75 transition-all md:pl-0.5 pl-1">
+              <h3 className="hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left sm:hidden sm:group-hover:bloc duration-75 transition-all md:pl-0.5 pl-1">
                 Support
               </h3>
             </Link>
