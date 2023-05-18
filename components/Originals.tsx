@@ -4,7 +4,7 @@ const Originals = () => {
   const Games = () => {
     return (
       <Link href="/">
-        <div className="h-[359px] bg-[#A4A4A4] hover:scale-105 transition-all cursor-pointer"></div>
+        <div className="lg:h-[359px] md:h-[300px] sm:h-[250px] h-[200px] bg-[#A4A4A4] hover:scale-105 transition-all cursor-pointer"></div>
       </Link>
     );
   };
@@ -18,7 +18,7 @@ const Originals = () => {
           <Link href="/">View all</Link>
         </p>
       </div>
-      <main className="w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-8 sm:gap-4 gap-y-8 grid flex-wrap py-9 overflow-auto">
+      <main className="w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-8 sm:gap-4 gap-2 gap-y-2 grid flex-wrap py-9 overflow-auto">
         <Games />
         <Games />
         <Games />
