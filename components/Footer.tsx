@@ -8,9 +8,9 @@ import rg from "../public/assets/rg.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a1a1a] border-t-2 border-white sm:px-16 px-5 py-16 grid grid-cols-1 gap-3 lg:grid-cols-2">
+    <footer className="bg-[#1a1a1a] border-t-2 border-white sm:px-16 px-5 py-16 grid grid-cols-1 gap-40 lg:grid-cols-2">
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="space-y-12">
+        <div className="lg:space-y-12 md:space-y-8 space-y-4">
           <Link href="/" className="cursor-pointer">
             <div className="flex justify-start items-center">
               <Image
@@ -38,35 +38,35 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <p className=" text-white lg:text-lg md:text-base text-sm">
+        <p className=" text-white lg:text-base md:text-sm text-xs">
           Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit
           amet consectetur adipisicing elit. Sint beatae pariatur molestias non
           commodi? Distinctio.
         </p>
       </div>
-      <div className="flex justify-center items-start gap-4 pt-4">
+      <div className=" grid grid-cols-1 md:grid-cols-2 links">
         <ul className="space-y-5">
-          <li className="uppercase lg:text-lg md:text-base text-sm text-white font-medium">
+          <li className="uppercase lg:text-base md:text-sm text-xs text-white font-medium">
             <Link href="/">Privacy policy</Link>
           </li>
-          <li className="uppercase lg:text-lg md:text-base text-sm text-white font-medium">
+          <li className="uppercase lg:text-base md:text-sm text-xs text-white font-medium">
             <Link href="/">terms & conditions</Link>
           </li>
-          <li className="uppercase lg:text-lg md:text-base text-sm text-white font-medium">
+          <li className="uppercase lg:text-base md:text-sm text-xs text-white font-medium">
             <Link href="/">kyc policies</Link>
           </li>
-          <li className="uppercase lg:text-lg md:text-base text-sm text-white font-medium">
+          <li className="uppercase lg:text-base md:text-sm text-xs text-white font-medium">
             <Link href="/">terms of service</Link>
           </li>
         </ul>
         <ul className="space-y-5">
-          <li className="uppercase lg:text-lg md:text-base text-sm text-white font-medium">
+          <li className="uppercase lg:text-base md:text-sm text-xs text-white font-medium">
             <Link href="/">responsible gambling</Link>
           </li>
-          <li className="uppercase lg:text-lg md:text-base text-sm text-white font-medium">
+          <li className="uppercase lg:text-base md:text-sm text-xs text-white font-medium">
             <Link href="/">help</Link>
           </li>
-          <li className="flex gap-2 items-center">
+          <li className="flex gap-4 items-center">
             <span>
               <Image src={adult} alt={"+18"} />
             </span>

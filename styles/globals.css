@@ -26,3 +26,19 @@ body {
 .all:hover::before {
   width: 70%;
 }
+.links li::before {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+  bottom: -2px;
+  height: 1px;
+}
+.links li:hover::before {
+  width: 50%;
+}
+.links li {
+  position: relative;
+  width: fit-content;
+}
