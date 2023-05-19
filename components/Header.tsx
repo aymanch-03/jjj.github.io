@@ -8,16 +8,9 @@ import { RiMenuUnfoldFill } from "react-icons/ri";
 import Logo from "../public/assets/jjjLogo.svg";
 import Sidebar from "./Sidebar";
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  useEffect(() => {
-    const storedOpenValue = localStorage.getItem("open");
-    setOpen(storedOpenValue ? JSON.parse(storedOpenValue) : false);
-  }, []);
-
+  const [open, setOpen] = useState(true);
   const handleMenu = () => {
-    const newOpenValue = !open;
-    setOpen(newOpenValue);
-    localStorage.setItem("open", JSON.stringify(newOpenValue));
+    setOpen(!open);
   };
   return (
     <div>
