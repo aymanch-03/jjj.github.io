@@ -38,8 +38,8 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
     <div
       className={`bg-[#1a1a1a] w-max min-h-full group ${sidebarProps} top-0 z-10 transition-all overflow-scroll fixed`}
     >
-      <nav className="flex flex-col justify-start min-h-full items-center md:pt-32 sm:pt-[6.3rem] pt-[4.5rem] ">
-        <ul className="h-full">
+      <nav className="flex flex-col justify-start min-h-full items-center md:pt-32 sm:pt-[6.3rem] pt-[4.5rem] overflow-scroll">
+        <ul className="h-full overflow-scroll">
           <Tab icon={Coins} desc="Coins" title="Coins" props="md:p-2 p-2.5" />
           <Tab icon={Wheel} desc="Wheel" title="Wheel" props="md:p-1.5 p-2" />
           <Tab
@@ -63,7 +63,7 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
           />
           <li className="overflow-hidden sm:group-hover:pr-20 sm:pr-0 pr-20 mx-3 duration-200 transition-all mt-16">
             <Link
-              className="py-5 flex justify-center items-center gap-7 md:px-2.5 sm:px-0"
+              className="py-5 flex justify-start items-center gap-7 md:px-2.5 sm:px-0"
               href="/"
             >
               <Image
@@ -71,7 +71,7 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
                 alt="Support"
                 width={40}
                 height={40}
-                className="md:p-2 p-2.5"
+                className="md:p-2.5 p-3 w-[45px]"
               />
               <h3 className="hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left sm:hidden sm:group-hover:block duration-75 transition-all md:pl-0.5 pl-1">
                 Support

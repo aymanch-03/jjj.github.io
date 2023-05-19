@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="bg-dark fixed z-50 w-full">
-        <div className="sm:px-6 sm:py-5 py-2 px-5 mx-auto flex justify-between items-center max-w-[1700px]">
+        <div className="sm:px-6 sm:py-5 py-2 px-5 mx-auto flex justify-between items-center min-w-full">
           <div className="flex items-center justify-center gap-4">
             <RiMenuUnfoldFill
               onClick={handleMenu}
@@ -33,7 +33,7 @@ const Navbar = () => {
                   height={94}
                   className="md:w-[60px] w-[40px]"
                 />
-                <h1 className="text-white font-semibold md:text-[18px] sm:text-[12px] pt-2 ml-1 hidden sm:block">
+                <h1 className="text-white font-semibold md:text-[18px] sm:text-[12px] pt-2 ml-1 hidden sm:block leading-5">
                   {" JIRA'S"} <br />
                   JACKPOT <br /> JUNGLE <br />
                 </h1>
