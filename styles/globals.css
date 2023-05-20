@@ -35,9 +35,15 @@ body {
   bottom: -2px;
   height: 1px;
 }
+
 .links li:hover::before {
   width: 50%;
 }
+
+.links .not:hover::before {
+  width: 0%;
+}
+
 .links li {
   position: relative;
   width: fit-content;

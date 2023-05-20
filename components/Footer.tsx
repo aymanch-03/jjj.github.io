@@ -8,9 +8,9 @@ import rg from "../public/assets/rg.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a1a1a] border-t-2 border-white sm:px-16 px-5 py-16 grid grid-cols-1 gap-40 lg:grid-cols-2">
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="lg:space-y-12 md:space-y-8 space-y-4">
+    <footer className="bg-[#1a1a1a] border-t-2 border-white sm:px-12 px-5 py-12 grid grid-cols-1 lg:gap-40 md:gap-28 sm:gap-14 gap-10 lg:grid-cols-2">
+      <div className="lg:space-y-10 md:space-y-8 sm:space-y-6 space-y-4">
+        <div className="sm:flex sm:justify-start sm:items-start sm:gap-32 gap-9">
           <Link href="/" className="cursor-pointer">
             <div className="flex justify-start items-center">
               <Image
@@ -26,25 +26,42 @@ const Footer = () => {
               </h1>
             </div>
           </Link>
-          <div className="flex items-center justify-start gap-3">
-            <span className="text-[#1a1a1a] p-1.5 rounded-full bg-primary">
-              <BsTwitter size={22} />
-            </span>
-            <span className="text-[#1a1a1a] p-1.5 rounded-full bg-primary">
-              <BsDiscord size={22} />
-            </span>
-            <span className="text-[#1a1a1a] p-1.5 rounded-full bg-primary">
-              <FaTelegramPlane size={22} />
-            </span>
-          </div>
+          <p className=" text-white lg:text-base md:text-sm text-xs font-light pt-[12px]">
+            Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit
+            amet consectetur adipisicing elit.
+          </p>
         </div>
-        <p className=" text-white lg:text-base md:text-sm text-xs">
-          Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Sint beatae pariatur molestias non
-          commodi? Distinctio.
-        </p>
+        <div className="flex items-center justify-start gap-3">
+          <Link
+            href="/"
+            className="text-[#1a1a1a] p-1.5 rounded-full bg-primary transition-all group hover:bg-primary/50 hover:scale-90"
+          >
+            <BsTwitter
+              size={22}
+              className="group-hover:text-white transition-all"
+            />
+          </Link>
+          <Link
+            href="/"
+            className="text-[#1a1a1a] p-1.5 rounded-full bg-primary transition-all group hover:bg-primary/50 hover:scale-90"
+          >
+            <BsDiscord
+              size={22}
+              className="group-hover:text-white transition-all"
+            />
+          </Link>
+          <Link
+            href="/"
+            className="text-[#1a1a1a] p-1.5 rounded-full bg-primary transition-all group hover:bg-primary/50 hover:scale-90"
+          >
+            <FaTelegramPlane
+              size={22}
+              className="group-hover:text-white transition-all"
+            />
+          </Link>
+        </div>
       </div>
-      <div className=" grid grid-cols-1 md:grid-cols-2 links">
+      <div className=" grid grid-cols-2 links pt-[12px]">
         <ul className="space-y-5">
           <li className="uppercase lg:text-base md:text-sm text-xs text-white font-medium">
             <Link href="/">Privacy policy</Link>
@@ -66,7 +83,7 @@ const Footer = () => {
           <li className="uppercase lg:text-base md:text-sm text-xs text-white font-medium">
             <Link href="/">help</Link>
           </li>
-          <li className="flex gap-4 items-center">
+          <li className="flex gap-4 items-center not">
             <span>
               <Image src={adult} alt={"+18"} />
             </span>
