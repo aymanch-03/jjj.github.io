@@ -17,14 +17,14 @@ const Chat = () => {
       >
         <div className="flex justify-start items-center">
           <div
-            className={`rounded-l-md p-2.5 bg-primary cursor-pointer relative top-0  w-fit ${
+            className={`rounded-l-md p-2.5 bg-primary cursor-pointer relative top-0  w-fit transition-all ${
               open ? "left-0" : "-left-[55px]"
             }`}
             onClick={handleChat}
           >
             <FaChevronRight
               size={35}
-              className={`text-dark ${open ? "" : "rotate-180"}`}
+              className={`text-dark transition-all ${open ? "" : "rotate-180"}`}
             />
           </div>
           <div
