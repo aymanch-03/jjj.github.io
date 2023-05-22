@@ -1,3 +1,4 @@
+import Chat from "@/components/Chat";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import "@/styles/globals.css";
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <main className="h-full">
         <Header />
+        <Chat />
         {children}
         <div className="md:ml-[85px] sm:ml-[4.5rem] mx-auto">
           <Footer />
