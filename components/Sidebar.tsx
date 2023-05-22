@@ -12,10 +12,10 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
   const Tab = ({ icon, desc, title, props }: any) => {
     return (
       <li
-        className={`overflow-hidden sm:group-hover:pr-20 sm:pr-0 pr-20 border-b-[0.25px] border-[#55565A] mx-3 duration-200 transition-all`}
+        className={`overflow-hidden mx-3 group-hover:mr-0 duration-200 transition-all`}
       >
         <Link
-          className="py-4 flex justify-start items-center gap-7 md:px-2.5 sm:px-0"
+          className="py-1 my-2 flex justify-start items-center gap-7 md:px-2.5 hover:bg-gradient-to-r from-white/10 to-transparent group-hover:md:pr-20 sm:px-0 transition-all rounded-l-md"
           href=""
         >
           <Image
@@ -26,7 +26,7 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
             className={`w-[45px] ${props}`}
           />
           <h3
-            className={`hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left sm:hidden sm:group-hover:block duration-75 transition-all md:pl-0.5 pl-1`}
+            className={` uppercase text-white lg:text-lg sm:text-sm text-left sm:hidden sm:group-hover:block duration-75 transition-all md:pl-0.5 pl-1`}
           >
             {title}
           </h3>
@@ -61,9 +61,9 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
             title="Security"
             props="md:p-2.5 p-3"
           />
-          <li className="overflow-hidden sm:group-hover:pr-20 sm:pr-0 pr-20 mx-3 duration-200 transition-all mt-16">
+          <li className="overflow-hidden mx-3 group-hover:mr-0 duration-200 transition-all mt-16">
             <Link
-              className="py-5 flex justify-start items-center gap-7 md:px-2.5 sm:px-0"
+              className="py-1 my-3 flex justify-start items-center gap-7 md:px-2.5 hover:bg-gradient-to-r from-white/10 to-transparent group-hover:md:pr-20 sm:px-0 transition-all rounded-l-md"
               href="/"
             >
               <Image
@@ -73,7 +73,7 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
                 height={40}
                 className="md:p-2.5 p-3 w-[45px]"
               />
-              <h3 className="hover:text-white/70 uppercase text-white lg:text-lg sm:text-sm text-left sm:hidden sm:group-hover:block duration-75 transition-all md:pl-0.5 pl-1">
+              <h3 className=" uppercase text-white lg:text-lg sm:text-sm text-left sm:hidden sm:group-hover:block duration-75 transition-all md:pl-0.5 pl-1">
                 Support
               </h3>
             </Link>
