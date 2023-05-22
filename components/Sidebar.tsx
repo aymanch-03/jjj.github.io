@@ -15,7 +15,7 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
         className={`overflow-hidden mx-3 group-hover:mr-0 duration-200 transition-all`}
       >
         <Link
-          className="py-1 my-2 flex justify-start items-center gap-7 md:px-2.5 hover:bg-gradient-to-r from-white/10 to-transparent group-hover:md:pr-20 sm:px-0 transition-all rounded-l-md"
+          className="py-1 my-2 flex justify-start items-center gap-7 md:px-2.5 hover:bg-gradient-to-r from-white/10 to-transparent group-hover:md:pr-20 sm:pr-0 pr-20 sm:px-0 transition-all rounded-l-md"
           href=""
         >
           <Image
