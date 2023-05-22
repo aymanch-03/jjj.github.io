@@ -9,7 +9,7 @@ const Chat = () => {
     setOpen(!open);
   };
   return (
-    <div className="fixed right-0 top-32 z-50 w-[24rem] h-[42rem] rounded-l-xl">
+    <div className="fixed right-0 top-32 z-50 w-[24rem] h-[38rem] rounded-l-xl">
       <div
         className={`transition-all h-full absolute w-full bg-dark ${
           open ? "right-0 overflow-hidden" : " -right-[24rem]"
