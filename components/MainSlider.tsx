@@ -18,10 +18,10 @@ const MainSlider = () => {
         pagination={{
           clickable: true,
         }}
-        // TODO: autoplay={{
-        // TODO  delay: 3500,
-        // TODO  disableOnInteraction: false,
-        // TODO }}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
         loop={true}
         modules={[Pagination, Autoplay]}
         className="mySwiper w-full md:h-[24rem] h-[28rem]"
@@ -41,7 +41,7 @@ const MainSlider = () => {
               </p>
               <FaChevronCircleRight
                 size={18}
-                className="group-hover:ml-2 transition-all text-black bg-white rounded-full"
+                className=" transition-all text-black rounded-full"
               />
             </button>
           </div>
@@ -61,7 +61,7 @@ const MainSlider = () => {
               </p>
               <FaChevronCircleRight
                 size={18}
-                className="group-hover:ml-2 transition-all text-black bg-white rounded-full"
+                className=" transition-all text-black rounded-full"
               />
             </button>
           </div>
@@ -81,7 +81,7 @@ const MainSlider = () => {
               </p>
               <FaChevronCircleRight
                 size={18}
-                className="group-hover:ml-2 transition-all text-black bg-white rounded-full"
+                className=" transition-all text-black rounded-full"
               />
             </button>
           </div>

@@ -8,6 +8,8 @@ import { RiSendPlaneFill } from "react-icons/ri";
 
 const Chat = () => {
   const breakpoint = 768;
+  const size =
+    typeof window !== "undefined" && window.innerWidth >= breakpoint ? 30 : 31;
   const [open, setOpen] = useState(false);
   const handleChat = () => {
     setOpen(!open);
@@ -29,7 +31,7 @@ const Chat = () => {
             onClick={handleChat}
           >
             <FaChevronRight
-              size={window.innerWidth >= breakpoint ? 30 : 31}
+              size={size}
               // size={35}
               className={`text-dark transition-all ${open ? "" : "rotate-180"}`}
             />
@@ -40,6 +42,7 @@ const Chat = () => {
               <FaUser size={15} className="text-primary" />
               <p className="text-primary text-sm">169</p>
             </div>
+
             <Link
               href="/"
               className="flex justify-center items-center gap-2 group"
