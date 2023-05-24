@@ -73,3 +73,23 @@ body {
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: rgba(235, 0, 41, 1);
 }
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+.slider::before {
+  z-index: 0;
+  position: absolute;
+  display: none;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+@media (max-width: 768px) {
+  .slider::before {
+    display: block;
+  }
+}

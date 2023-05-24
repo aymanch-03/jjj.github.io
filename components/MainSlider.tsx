@@ -19,15 +19,15 @@ const MainSlider = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 3500,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         loop={true}
         modules={[Pagination, Autoplay]}
         className="mySwiper w-full md:h-[24rem] h-[28rem]"
       >
-        <SwiperSlide className="bg-one bg-cover bg-center bg-no-repeat w-full h-full text-white md:px-16 px-6 rounded-3xl s-1 border border-white/50 !flex justify-start items-center ">
-          <div className="flex flex-col gap-4 md:justify-start md:w-[55%] w-full justify-center sm:text-left text-center">
+        <SwiperSlide className="bg-one bg-cover bg-center bg-no-repeat w-full h-full text-white md:px-16 px-6 rounded-3xl s-1 border border-white/50 !flex justify-start items-center slider">
+          <div className="flex flex-col gap-4 md:justify-start md:w-[55%] w-full justify-center md:text-left text-center relative z-[1]">
             <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold">
               GAME OF THE WEEK
             </h1>
@@ -35,7 +35,7 @@ const MainSlider = () => {
               Join the party and hit the jackpot today at Funky Coins - where{" "}
               every bet is a chance to turn up the volume on your winnings!
             </p>
-            <button className="gap-3 rounded-lg group uppercase px-3 py-2 bg-primary flex items-center justify-center md:justify-start md:text-sm text-xs font-medium sm:w-fit">
+            <button className="gap-3 rounded-lg group uppercase px-3 py-2 bg-primary flex items-center justify-center md:justify-start md:text-sm text-xs font-medium md:w-fit md:mx-0 mx-auto">
               <p className="uppercase md:text-sm text-xs font-medium">
                 connect wallet
               </p>
@@ -46,8 +46,8 @@ const MainSlider = () => {
             </button>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="bg-two bg-cover bg-center bg-no-repeat w-full h-full text-white md:px-16 px-6 rounded-3xl s-1 border border-white/50 !flex justify-start items-center ">
-          <div className="flex flex-col gap-4 md:justify-start md:w-[55%] w-full justify-center sm:text-left text-center">
+        <SwiperSlide className="bg-two bg-cover bg-center bg-no-repeat w-full h-full text-white md:px-16 px-6 rounded-3xl s-1 border border-white/50 !flex justify-start items-center slider">
+          <div className="flex flex-col gap-4 md:justify-start md:w-[55%] w-full justify-center md:text-left text-center relative z-[1]">
             <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold">
               GAME OF THE WEEK
             </h1>
@@ -55,7 +55,7 @@ const MainSlider = () => {
               Join the party and hit the jackpot today at Funky Coins - where{" "}
               every bet is a chance to turn up the volume on your winnings!
             </p>
-            <button className="gap-3 rounded-lg group uppercase px-3 py-2 bg-primary flex items-center justify-center md:justify-start md:text-sm text-xs font-medium sm:w-fit">
+            <button className="gap-3 rounded-lg group uppercase px-3 py-2 bg-primary flex items-center justify-center md:justify-start md:text-sm text-xs font-medium md:w-fit md:mx-0 mx-auto">
               <p className="uppercase md:text-sm text-xs font-medium">
                 connect wallet
               </p>
@@ -66,8 +66,8 @@ const MainSlider = () => {
             </button>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="bg-three bg-cover bg-center bg-no-repeat  w-full h-full text-white md:px-16 px-6 rounded-3xl s-1 border border-white/50 !flex justify-start items-center ">
-          <div className="flex flex-col gap-4 md:justify-start md:w-[55%] w-full justify-center sm:text-left text-center">
+        <SwiperSlide className="bg-three bg-cover bg-center bg-no-repeat  w-full h-full text-white md:px-16 px-6 rounded-3xl s-1 border border-white/50 !flex justify-start items-center slider">
+          <div className="flex flex-col gap-4 md:justify-start md:w-[55%] w-full justify-center md:text-left text-center relative z-[1]">
             <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold">
               GAME OF THE WEEK
             </h1>
@@ -75,7 +75,7 @@ const MainSlider = () => {
               Join the party and hit the jackpot today at Funky Coins - where{" "}
               every bet is a chance to turn up the volume on your winnings!
             </p>
-            <button className="gap-3 rounded-lg group uppercase px-3 py-2 bg-primary flex items-center justify-center md:justify-start md:text-sm text-xs font-medium sm:w-fit">
+            <button className="gap-3 rounded-lg group uppercase px-3 py-2 bg-primary flex items-center justify-center md:justify-start md:text-sm text-xs font-medium md:w-fit md:mx-0 mx-auto">
               <p className="uppercase md:text-sm text-xs font-medium">
                 connect wallet
               </p>
