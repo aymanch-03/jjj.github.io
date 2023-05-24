@@ -1,3 +1,4 @@
+import HistoryTable from "@/components/HistoryTable";
 import MainSlider from "@/components/MainSlider";
 import Originals from "@/components/Originals";
 import Statistics from "@/components/Statistics";
@@ -9,6 +10,7 @@ const Home = () => {
         <MainSlider />
         <Originals />
         <Statistics />
+        <HistoryTable />
       </div>
     </>
   );
