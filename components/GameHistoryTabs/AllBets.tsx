@@ -20,7 +20,7 @@ const AllBets = () => {
     imgSrc,
   }: any) => {
     return (
-      <tr className="h-[70px] bg-[#1d1d1d] my-3 rounded-full">
+      <tr className="h-[70px] bg-[#1d1d1d] my-3 rounded-full ">
         <td className="font-light pl-8  gap-6 text-base align-middle flex items-center mt-[19px]">
           <Image src={imgSrc} alt={Game} width={30} height={30} className="" />
           {Game}
@@ -40,7 +40,7 @@ const AllBets = () => {
     );
   };
   return (
-    <section className="w-[100%] h-[90vh] overflow-auto my-9">
+    <section className="w-[100%] h-[90vh] overflow-auto my-9 second-scroll">
       <div className="md:w-[100%] w-[170%] max-h-[89%] overflow-auto scroll">
         <table className="w-full overflow-x-auto mx-auto">
           <thead className="w-full bg-[#111] h-[70px] sticky top-0 left-0">

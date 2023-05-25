@@ -40,7 +40,7 @@ const Jackpot = () => {
     );
   };
   return (
-    <section className="w-[100%] h-[90vh] overflow-auto my-9">
+    <section className="w-[100%] h-[90vh] overflow-auto my-9 second-scroll">
       <div className="md:w-[100%] w-[170%] max-h-[89%] overflow-auto scroll">
         <table className="w-full overflow-x-auto mx-auto">
           <thead className="w-full bg-[#111] h-[70px] sticky top-0 left-0">
