@@ -58,6 +58,7 @@ const HistoryTable = () => {
       {activeTab === 1 && <Jackpot />}
       {activeTab === 2 && <HighRollers />}
       {activeTab === 3 && <LuckyBets />}
+      <div className="bg-gradient-to-b from-transparent to-[#0b080b] w-full h-32 relative bottom-[15.6rem] "></div>
     </div>
   );
 };
