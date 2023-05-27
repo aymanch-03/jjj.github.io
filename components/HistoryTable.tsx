@@ -13,7 +13,7 @@ const HistoryTable = () => {
   };
 
   return (
-    <div className="sm:px-12 px-5 py-12">
+    <div className=" px-5 py-12 max-w-[85rem] mx-auto">
       <div className="md:flex items-center justify-between">
         <h1 className=" md:text-2xl text-xl text-white font-semibold uppercase">
           game history
@@ -58,7 +58,6 @@ const HistoryTable = () => {
       {activeTab === 1 && <Jackpot />}
       {activeTab === 2 && <HighRollers />}
       {activeTab === 3 && <LuckyBets />}
-      <div className="bg-gradient-to-b from-transparent to-[#0b080b] w-full h-32 relative bottom-[15.6rem] "></div>
     </div>
   );
 };

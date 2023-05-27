@@ -12,7 +12,7 @@ import { Autoplay, Pagination } from "swiper";
 
 const MainSlider = () => {
   return (
-    <div className="sm:px-12 px-5 pb-12 md:pt-[10rem] sm:pt-[8rem] pt-[6rem]">
+    <div className="px-5 pb-12 md:pt-[10rem] sm:pt-[8rem] pt-[6rem] max-w-[85rem] mx-auto">
       <Swiper
         spaceBetween={40}
         pagination={{

@@ -222,6 +222,7 @@ const AllBets = () => {
             />
           </tbody>
         </table>
+        <div className="bg-gradient-to-b from-transparent to-[#0b080b] w-full h-32 relative bottom-0 "></div>
       </div>
     </section>
   );

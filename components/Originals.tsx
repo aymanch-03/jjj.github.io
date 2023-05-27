@@ -9,7 +9,7 @@ const Originals = () => {
     );
   };
   return (
-    <div className="sm:px-12 px-5 py-12 ">
+    <div className=" px-5 py-12  max-w-[85rem] mx-auto">
       <div className="w-full items-center flex justify-between">
         <h1 className="md:text-2xl text-lg text-white font-semibold uppercase">
           {"Jira's originals"}

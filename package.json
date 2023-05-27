@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "dev": " next dev -p 8080",
+    "dev": " next dev -p 5000",
     "build": "next build",
     "start": "next start"
   },
