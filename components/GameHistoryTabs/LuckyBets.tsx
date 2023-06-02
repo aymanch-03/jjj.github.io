@@ -45,7 +45,7 @@ const LuckyBets = () => {
         <table className="w-full overflow-x-auto mx-auto">
           <thead className="w-full bg-[#111] h-[70px] sticky top-0 left-0">
             <tr className="text-white text-left  uppercase">
-              <th className="font-light pl-8 rounded-l-[10px] md:text-lg text-base">
+              <th className="font-light pl-8 rounded-bl-[10px] md:text-lg text-base">
                 Game
               </th>
               <th className="font-light text-center md:text-lg text-base">
@@ -60,7 +60,7 @@ const LuckyBets = () => {
               <th className="font-light text-center md:text-lg text-base">
                 Multiplier
               </th>
-              <th className="font-light text-center rounded-r-[10px] md:text-lg text-base">
+              <th className="font-light text-center rounded-br-[10px] md:text-lg text-base">
                 {" "}
                 Payout
               </th>

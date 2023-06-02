@@ -20,7 +20,7 @@ const AllBets = () => {
     imgSrc,
   }: any) => {
     return (
-      <tr className="h-[70px] bg-[#1d1d1d] my-3 rounded-full ">
+      <tr className="h-[70px] bg-[#1d1d1d] my-3 rounded-full">
         <td className="font-light pl-8  gap-6 text-base align-middle flex items-center mt-[19px]">
           <Image src={imgSrc} alt={Game} width={30} height={30} className="" />
           {Game}
@@ -45,7 +45,7 @@ const AllBets = () => {
         <table className="w-full overflow-x-auto mx-auto">
           <thead className="w-full bg-[#111] h-[70px] sticky top-0 left-0">
             <tr className="text-white text-left  uppercase">
-              <th className="font-light pl-8 rounded-l-[10px] md:text-lg text-base">
+              <th className="font-light pl-8 rounded-bl-[10px] md:text-lg text-base">
                 Game
               </th>
               <th className="font-light text-center md:text-lg text-base">
@@ -60,7 +60,7 @@ const AllBets = () => {
               <th className="font-light text-center md:text-lg text-base">
                 Multiplier
               </th>
-              <th className="font-light text-center rounded-r-[10px] md:text-lg text-base">
+              <th className="font-light text-center rounded-br-[10px] md:text-lg text-base">
                 Payout
               </th>
             </tr>

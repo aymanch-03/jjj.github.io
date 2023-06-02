@@ -3,11 +3,13 @@
 import React, { SetStateAction, useRef, useState } from "react";
 
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
+import { FaPlay } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
 
+import Link from "next/link";
 import { Navigation } from "swiper";
 
 const GamesSlider = () => {
@@ -68,10 +70,58 @@ const GamesSlider = () => {
             modules={[Navigation]}
             className="mySwiper text-white"
           >
-            <SwiperSlide className="min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/spin.jpeg')] gameSlide"></SwiperSlide>
-            <SwiperSlide className="min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/happycoins.jpeg')] gameSlide"></SwiperSlide>
-            <SwiperSlide className="min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/billardgo.jpeg')] gameSlide"></SwiperSlide>
-            <SwiperSlide className="min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/spin.jpeg')] gameSlide"></SwiperSlide>
+            <SwiperSlide className="group min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/spin.jpeg')] gameSlide z-10 realtive">
+              {/* <button
+                className="cursor-pointer -translate-x-2/4 translate-y-0 left-2/4 relative -bottom-[200px] py-3 px-10 bg-primary text-white font-medium text-center rounded-2xl transition-all delay-200 group-hover:-bottom-[50px]
+              "
+              >
+                <Link href="/">Play now</Link>
+              </button> */}
+
+              <FaPlay
+                size={40}
+                className="-translate-x-2/4 translate-y-0 left-2/4 relative -top-[200px] transition-all text-white delay-300 group-hover:top-[36px] group-hover:opacity-100 opacity-0"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="group min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/happycoins.jpeg')] gameSlide z-10 realtive">
+              {/* <button
+                className="cursor-pointer -translate-x-2/4 translate-y-0 left-2/4 relative -bottom-[200px] py-3 px-10 bg-primary text-white font-medium text-center rounded-2xl transition-all delay-200 group-hover:-bottom-[50px]
+              "
+              >
+                <Link href="/">Play now</Link>
+              </button> */}
+
+              <FaPlay
+                size={40}
+                className="-translate-x-2/4 translate-y-0 left-2/4 relative -top-[200px] transition-all text-white delay-300 group-hover:top-[36px] group-hover:opacity-100 opacity-0"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="group min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/billardgo.jpeg')] gameSlide z-10 realtive">
+              {/* <button
+                className="cursor-pointer -translate-x-2/4 translate-y-0 left-2/4 relative -bottom-[200px] py-3 px-10 bg-primary text-white font-medium text-center rounded-2xl transition-all delay-200 group-hover:-bottom-[50px]
+              "
+              >
+                <Link href="/">Play now</Link>
+              </button> */}
+
+              <FaPlay
+                size={40}
+                className="-translate-x-2/4 translate-y-0 left-2/4 relative -top-[200px] transition-all text-white delay-300 group-hover:top-[36px] group-hover:opacity-100 opacity-0"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="group min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/spin.jpeg')]  z-10 gameSlide realtive">
+              {/* <button
+                className="cursor-pointer -translate-x-2/4 translate-y-0 left-2/4 relative -bottom-[200px] py-3 px-10 bg-primary text-white font-medium text-center rounded-2xl transition-all delay-200 group-hover:-bottom-[50px]
+              "
+              >
+                <Link href="/">Play now</Link>
+              </button> */}
+
+              <FaPlay
+                size={40}
+                className="-translate-x-2/4 translate-y-0 left-2/4 relative -top-[200px] transition-all text-white delay-300 group-hover:top-[36px] group-hover:opacity-100 opacity-0"
+              />
+            </SwiperSlide>
           </Swiper>
         </>
       )}
