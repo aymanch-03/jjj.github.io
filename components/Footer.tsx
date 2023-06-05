@@ -34,29 +34,29 @@ const Footer = () => {
         <div className="flex items-center justify-start gap-3">
           <Link
             href="/"
-            className="text-[#1a1a1a] p-1.5 rounded-full bg-primary transition-all group hover:bg-primary/50 hover:scale-90"
+            className="text-[#1a1a1a] p-1.5 rounded-full bg-primary transition-all group"
           >
             <BsTwitter
               size={22}
-              className="group-hover:text-white transition-all"
+              className="group-hover:text-white/60 transition-all"
             />
           </Link>
           <Link
             href="/"
-            className="text-[#1a1a1a] p-1.5 rounded-full bg-primary transition-all group hover:bg-primary/50 hover:scale-90"
+            className="text-[#1a1a1a] p-1.5 rounded-full bg-primary transition-all group"
           >
             <BsDiscord
               size={22}
-              className="group-hover:text-white transition-all"
+              className="group-hover:text-white/60 transition-all"
             />
           </Link>
           <Link
             href="/"
-            className="text-[#1a1a1a] p-1.5 rounded-full bg-primary transition-all group hover:bg-primary/50 hover:scale-90"
+            className="text-[#1a1a1a] p-1.5 rounded-full bg-primary transition-all group"
           >
             <FaTelegramPlane
               size={22}
-              className="group-hover:text-white transition-all"
+              className="group-hover:text-white/60 transition-all"
             />
           </Link>
         </div>

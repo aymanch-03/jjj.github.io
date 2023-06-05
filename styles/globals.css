@@ -134,9 +134,9 @@ body {
   display: block;
   background: rgb(255, 255, 255);
   background: linear-gradient(
-    164deg,
+    135deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(235, 0, 41, 1) 97%
+    rgba(235, 0, 41, 1) 80%
   );
   width: 100%;
   height: 100%;
@@ -146,15 +146,15 @@ body {
   transition: all 0.1s ease;
 }
 .gameSlide:hover::before {
-  ckground: linear-gradient(
-    180deg,
+  background: linear-gradient(
+    135deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(235, 0, 41, 1) 50%
+    rgba(235, 0, 41, 1) 80%
   );
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-.gameSlide::after {
-  content: "HAPPY COINS";
+/*.gameSlide::after {
+  content: "";
   position: absolute;
   display: block;
   bottom: 0;
@@ -167,11 +167,24 @@ body {
   transition: 0.3s all;
   transition-duration: 0.3s;
 }
-.gameSlide:hover::after {
+/*.gameSlide:hover::after {
   left: 50%;
   transform: translate(-50%, 0px);
   padding: 20px 0;
   font-size: 22px;
   font-weight: 600;
 }
-/* before:bg-gradient-to-l  from-[#0b0a0b] to-transparent */
+.originalGames::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(235, 0, 41, 0.5);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.3s;
+  trasition-delay: 1s;
+}
+.originalGames:hover::after {
+  opacity: 1;
+} */

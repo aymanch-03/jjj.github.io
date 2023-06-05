@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { FaPlay } from "react-icons/fa";
 
 const Originals = () => {
   const Games = () => {
     return (
       <Link href="/">
-        <div className="lg:h-[359px] md:h-[300px] sm:h-[250px] h-[200px] bg-[#A4A4A4] hover:scale-105 transition-all cursor-pointer"></div>
+        <div className="lg:h-[359px] md:h-[300px] sm:h-[250px] h-[200px] bg-[#A4A4A4] hover:translate-y-[-10px] transition-all cursor-pointer "></div>
       </Link>
     );
   };
