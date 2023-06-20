@@ -15,14 +15,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <main className="h-full">
-        <Header />
-        <Chat />
-        {children}
-        <div className="md:ml-[85px] sm:ml-[4.5rem] mx-auto">
-          <Footer />
-        </div>
-      </main>
+      <body>
+        <main className="h-full">
+          <Header />
+          <Chat />
+          {children}
+          <div className="md:ml-[85px] sm:ml-[4.5rem] mx-auto">
+            <Footer />
+          </div>
+        </main>
+      </body>
     </html>
   );
 }

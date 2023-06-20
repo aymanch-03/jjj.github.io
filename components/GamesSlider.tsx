@@ -1,16 +1,16 @@
 "use client";
 
-import React, { SetStateAction, useRef, useState } from "react";
+import React, { SetStateAction, useState } from "react";
 
-import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import { FaPlay } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
 
 import Link from "next/link";
 import { Navigation } from "swiper";
+import GamesNav from "./GamesNav";
 
 const GamesSlider = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -19,8 +19,6 @@ const GamesSlider = () => {
     setActiveTab(tabIndex);
   };
   const Slider = () => {
-    const navigationPrevRef = React.useRef(null);
-    const navigationNextRef = React.useRef(null);
     const breakpoints = {
       2500: {
         slidesPerView: 3,
@@ -51,13 +49,10 @@ const GamesSlider = () => {
           pagination={{
             clickable: true,
           }}
-          navigation={{
-            prevEl: navigationPrevRef.current,
-            nextEl: navigationNextRef.current,
-          }}
           modules={[Navigation]}
           className="mySwiper text-white"
         >
+          <GamesNav />
           <Link href="/" className="cursor-pointer">
             <SwiperSlide className="group min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/spin.jpeg')] transition-all gameSlide z-10 relative cursor-pointer overflow-hidden">
               <FaPlay
@@ -135,16 +130,7 @@ const GamesSlider = () => {
             live casino
           </div>
         </div>
-        <div className="flex md:justify-end justify-center items-center gap-2">
-          <BiLeftArrowAlt
-            className="text-white hover:text-white/70 cursor-pointer transition-all"
-            size={32}
-          />
-          <BiRightArrowAlt
-            className="text-white hover:text-white/70 cursor-pointer transition-all"
-            size={32}
-          />
-        </div>
+        <div className="flex md:justify-end justify-center items-center gap-2"></div>
       </div>
       {activeTab === 0 && <Slider />}
       {activeTab === 1 && <Slider />}
