@@ -38,7 +38,7 @@ const Footer = () => {
           >
             <BsTwitter
               size={22}
-              className="group-hover:text-white/60 transition-all"
+              className="group-hover:text-[#1DA1F2] transition-all"
             />
           </Link>
           <Link
@@ -47,7 +47,7 @@ const Footer = () => {
           >
             <BsDiscord
               size={22}
-              className="group-hover:text-white/60 transition-all"
+              className="group-hover:text-[#5865F2] transition-all"
             />
           </Link>
           <Link
@@ -56,7 +56,7 @@ const Footer = () => {
           >
             <FaTelegramPlane
               size={22}
-              className="group-hover:text-white/60 transition-all"
+              className="group-hover:text-[#0088cc] transition-all"
             />
           </Link>
         </div>
