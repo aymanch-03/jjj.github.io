@@ -1,8 +1,8 @@
 "use client";
 
-import React, { SetStateAction, useState } from "react";
+import React, { SetStateAction, useRef, useState } from "react";
+import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 
-import { FaPlay } from "react-icons/fa";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
 import "swiper/css";
@@ -10,14 +10,23 @@ import "swiper/css/navigation";
 
 import Link from "next/link";
 import { Navigation } from "swiper";
-import GamesNav from "./GamesNav";
+import GamesContent from "../GamesSlider/GamesContent";
 
 const GamesSlider = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const SlideRef = useRef<any>();
+  const swiper = useSwiper();
+  const handleNext = () => {
+    SlideRef.current.swiper.slideNext();
+  };
 
+  const handlePrev = () => {
+    SlideRef.current.swiper.slidePrev();
+  };
   const handleTabClick = (tabIndex: SetStateAction<number>) => {
     setActiveTab(tabIndex);
   };
+
   const Slider = () => {
     const breakpoints = {
       2500: {
@@ -50,51 +59,27 @@ const GamesSlider = () => {
             clickable: true,
           }}
           modules={[Navigation]}
+          ref={SlideRef}
           className="mySwiper text-white"
         >
-          <GamesNav />
           <Link href="/" className="cursor-pointer">
             <SwiperSlide className="group min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/spin.jpeg')] transition-all gameSlide z-10 relative cursor-pointer overflow-hidden">
-              <FaPlay
-                size={40}
-                className="-translate-x-2/4 translate-y-0 left-[120%] group-hover:left-1/2 relative transition-all text-white top-[36px] group-hover:opacity-100 opacity-0"
-              />
-              <h3 className="uppercase text-white font-medium absolute right-0 bottom-0 text-xl px-6 transition-all group-hover:py-5 py-3">
-                spin the luck
-              </h3>
+              <GamesContent title="spin the luck" />
             </SwiperSlide>
           </Link>
           <Link href="/" className="cursor-pointer">
             <SwiperSlide className="group min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/happycoins.jpeg')] transition-all gameSlide z-10 relative overflow-hidden cursor-pointer">
-              <FaPlay
-                size={40}
-                className="-translate-x-2/4 translate-y-0 left-[120%] group-hover:left-1/2 relative transition-all text-white top-[36px] group-hover:opacity-100 opacity-0"
-              />
-              <h3 className="uppercase text-white font-medium absolute right-0 bottom-0 text-xl px-6 transition-all group-hover:py-5 py-3">
-                happy coins
-              </h3>
+              <GamesContent title="happy coins" />
             </SwiperSlide>
           </Link>
           <Link href="/" className="cursor-pointer">
             <SwiperSlide className="group min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/billardgo.jpeg')] transition-all gameSlide z-10 relative cursor-pointer overflow-hidden">
-              <FaPlay
-                size={40}
-                className="-translate-x-2/4 translate-y-0 left-[120%] group-hover:left-1/2 relative transition-all text-white top-[36px] group-hover:opacity-100 opacity-0"
-              />
-              <h3 className="uppercase text-white font-medium absolute right-0 bottom-0 text-xl px-6 transition-all group-hover:py-5 py-3">
-                Billard go
-              </h3>
+              <GamesContent title="billard go" />
             </SwiperSlide>
           </Link>
           <Link href="/" className="cursor-pointer">
             <SwiperSlide className="group min-h-[12rem] bg-cover bg-center p-8 bg-[url('/assets/gamesSlider/spin.jpeg')]  z-10 transition-all gameSlide relative cursor-pointer overflow-hidden">
-              <FaPlay
-                size={40}
-                className="-translate-x-2/4 translate-y-0 left-[120%] group-hover:left-1/2 relative transition-all text-white top-[36px] group-hover:opacity-100 opacity-0"
-              />
-              <h3 className="uppercase text-white font-medium absolute right-0 bottom-0 text-xl px-6 transition-all group-hover:py-5 py-3">
-                spin the luck
-              </h3>
+              <GamesContent title="spin the luck" />
             </SwiperSlide>
           </Link>
         </Swiper>
@@ -103,8 +88,8 @@ const GamesSlider = () => {
   };
   return (
     <div className="max-w-[85rem] mx-auto px-5 py-8">
-      <div className="md:flex items-center justify-between mb-12">
-        <div className="text-white flex items-center justify-between md:w-2/5 w-full  md:mt-0 mt-5">
+      <div className="md:flex items-center justify-between md:mb-12 mb-4">
+        <div className="text-white flex items-center justify-between lg:w-2/5 md:w-3/5 w-full  md:mt-0 mt-5">
           <div
             className={`cursor-pointer text-center uppercase font-normal md:text-xl sm:text-lg text-base transition-all ${
               activeTab === 0 ? "activeTab relative text-primary" : ""
@@ -130,7 +115,20 @@ const GamesSlider = () => {
             live casino
           </div>
         </div>
-        <div className="flex md:justify-end justify-center items-center gap-2"></div>
+        <div className="flex md:justify-end justify-center items-center gap-2 md:p-0 pt-[20px]">
+          <button onClick={handlePrev}>
+            <BiLeftArrowAlt
+              className="text-white/70 hover:text-white cursor-pointer transition-all"
+              size={32}
+            />
+          </button>
+          <button onClick={handleNext}>
+            <BiRightArrowAlt
+              className="text-white/70 hover:text-white cursor-pointer transition-all"
+              size={32}
+            />
+          </button>
+        </div>
       </div>
       {activeTab === 0 && <Slider />}
       {activeTab === 1 && <Slider />}

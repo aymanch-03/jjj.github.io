@@ -29,6 +29,7 @@ const Chat = () => {
             onClick={handleChat}
           >
             <FaChevronRight
+              size={30}
               className={`text-dark transition-all ${open ? "" : "rotate-180"}`}
             />
           </div>

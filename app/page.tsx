@@ -1,4 +1,4 @@
-import GamesSlider from "@/components/GamesSlider";
+import GamesSlider from "@/components/GamesSlider/GamesSlider";
 import HistoryTable from "@/components/HistoryTable";
 import MainSlider from "@/components/MainSlider";
 import Originals from "@/components/Originals";

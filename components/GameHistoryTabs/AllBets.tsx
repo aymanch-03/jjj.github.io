@@ -40,8 +40,8 @@ const AllBets = () => {
     );
   };
   return (
-    <section className="w-[100%] h-[90vh] overflow-auto my-9 second-scroll">
-      <div className="md:w-[100%] w-[170%] max-h-[89%] overflow-auto scroll">
+    <section className="w-[100%] h-[85vh] overflow-auto my-9 second-scroll relative">
+      <div className="md:w-[100%] w-[170%] max-h-full overflow-auto scroll ">
         <table className="w-full overflow-x-auto mx-auto">
           <thead className="w-full bg-[#111] h-[70px] sticky top-0 left-0">
             <tr className="text-white text-left  uppercase">
@@ -61,12 +61,13 @@ const AllBets = () => {
                 Multiplier
               </th>
               <th className="font-light text-center rounded-br-[10px] md:text-lg text-base">
+                {" "}
                 Payout
               </th>
             </tr>
           </thead>
 
-          <tbody className="text-white w-[95%] max-h-[23rem] overflow-auto mx-auto space-y-3">
+          <tbody className="text-white w-[95%] max-h-[23rem] overflow-auto mx-auto space-y-3 even:bg-white">
             <HistoryData
               imgSrc={Coins}
               Game="Coins"
@@ -222,8 +223,8 @@ const AllBets = () => {
             />
           </tbody>
         </table>
-        <div className="bg-gradient-to-b from-transparent to-[#0b080b] w-full h-32 relative bottom-0 "></div>
       </div>
+      <div className="bg-gradient-to-b from-transparent to-[#0b080b] w-full h-32 absolute bottom-0"></div>
     </section>
   );
 };
