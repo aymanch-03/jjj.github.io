@@ -87,7 +87,7 @@ const GamesSlider = () => {
     );
   };
   return (
-    <div className="max-w-[85rem] mx-auto px-5 py-8">
+    <div className="max-w-[85rem] mx-auto px-5 pt-8 pb-24 border-b-[0.5px] border-[#fff]/40">
       <div className="md:flex items-center justify-between md:mb-12 mb-4">
         <div className="text-white flex items-center justify-between lg:w-2/5 md:w-3/5 w-full  md:mt-0 mt-5">
           <div
