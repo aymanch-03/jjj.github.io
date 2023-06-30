@@ -23,7 +23,7 @@ const Chat = () => {
       >
         <div className="flex justify-start items-center">
           <div
-            className={` p-2.5 bg-primary cursor-pointer relative top-[-3px]  w-fit transition-all ${
+            className={`p-2.5 bg-primary cursor-pointer relative top-[-3px]  w-fit transition-all ${
               open ? "left-0 rounded-tl-2xl" : "-left-[55px] rounded-l-2xl"
             }`}
             onClick={handleChat}

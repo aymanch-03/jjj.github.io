@@ -12,10 +12,11 @@ const Navbar = () => {
   const handleMenu = () => {
     setOpen(!open);
   };
+
   return (
     <div>
       <nav className="bg-dark fixed z-50 w-full">
-        <div className="sm:px-6 sm:py-5 py-2 px-5 mx-auto flex justify-between items-center min-w-full">
+        <div className="sm:px-[1.45rem] md:px-7 sm:py-2.5 py-2 px-5 mx-auto flex justify-between items-center min-w-full">
           <div className="flex items-center justify-center gap-4">
             <RiMenuUnfoldFill
               onClick={handleMenu}
@@ -31,32 +32,31 @@ const Navbar = () => {
                   alt="JJJ Logo"
                   width={60}
                   height={94}
-                  className="md:w-[60px] w-[40px]"
+                  className="md:w-[40px] w-[30px]"
                 />
-                <h1 className="text-white font-semibold md:text-[18px] sm:text-[12px] pt-2 ml-1 hidden sm:block leading-5">
-                  {" JIRA'S"} <br />
-                  JACKPOT <br /> JUNGLE <br />
+                <h1 className="text-white font-semibold lg:text-[22px] sm:text-[19px] md:ml-[1.1rem] sm:ml-[1.1rem] hidden sm:block leading-5">
+                  {" JIRA'S"} JACKPOT JUNGLE
                 </h1>
               </div>
             </Link>
           </div>
-          <div className="flex items-center justify-between md:gap-7 gap-4">
+          <div className="flex items-center justify-between lg:gap-7 md:gap-3.5 gap-4">
             <AiOutlineGlobal
               size={36}
               className="text-white cursor-pointer hover:text-white/80 transition-all md:block hidden"
             />
-            <div className="md:p-2 px-[2px] rounded-md border  flex justify-start items-center ">
+            <div className="lg:px-2 lg:py-[6.65px] md:px-2 md:py-[4.15px] px-[2px] rounded-md md:border md:border-solid border-none flex justify-start items-center ">
               <BiSearchAlt2
                 size={26}
-                className="text-white md:w-[26px] w-[20px]"
+                className="text-white lg:w-[26px] md:w-[21px] w-[20px]"
               />
               <input
                 type="text"
                 placeholder="Search"
-                className="text-white text-[16px] pr-24 bg-transparent hidden md:block placeholder:uppercase placeholder:text-white placeholder:text-[14px] pl-3 outline-none"
+                className="text-white lg:text-[18px] md:text-[14px] text-[12px] lg:pr-24 md:pr-0 bg-transparent hidden md:block placeholder:uppercase placeholder:text-white placeholder:lg:text-[18px] placeholder:md:text-[14px] placeholder:text-[12px] pl-3 outline-none"
               />
             </div>
-            <button className="cursor-pointer left- transition-all hover:bg-primary/80 uppercase text-white md:px-12 px-5 rounded-md sm:py-2 py-1 bg-primary font-medium border-primary border-2 md:text-[16px] text-[12px] whitespace-nowrap">
+            <button className="cursor-pointer transition-all hover:bg-primary/80 uppercase text-white lg:px-12 md:px-8 px-5 rounded-md py-[6px] bg-primary font-medium border-primary border-2 lg:text-[18px] md:text-[14px] text-[12px] whitespace-nowrap">
               sign in
             </button>
           </div>

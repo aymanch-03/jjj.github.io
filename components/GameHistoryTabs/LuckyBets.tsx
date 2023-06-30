@@ -20,7 +20,7 @@ const LuckyBets = () => {
     imgSrc,
   }: any) => {
     return (
-      <tr className="h-[70px] bg-[#1d1d1d] my-3 rounded-[10px]">
+      <tr className="h-[70px] bg-[#1d1d1d] my-3 rounded-[10px] border-y border-black">
         <td className="font-light pl-8  gap-6 text-base align-middle flex items-center mt-[19px]">
           <Image src={imgSrc} alt={Game} width={30} height={30} className="" />
           {Game}

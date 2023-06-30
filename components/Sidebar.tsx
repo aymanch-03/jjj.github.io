@@ -38,7 +38,7 @@ const Sidebar = ({ reponsponsiveProps, sidebarProps }: any) => {
     <div
       className={`bg-[#1a1a1a] w-max min-h-full group ${sidebarProps} top-0 z-10 transition-all overflow-scroll fixed`}
     >
-      <nav className="flex flex-col justify-start min-h-full items-center md:pt-32 sm:pt-[6.3rem] pt-[4.5rem] overflow-scroll">
+      <nav className="flex flex-col justify-start min-h-full items-center md:pt-[5rem] sm:pt-[3.8rem] pt-[3.6rem] overflow-scroll">
         <ul className="h-full overflow-scroll">
           <Tab icon={Coins} desc="Coins" title="Coins" props="md:p-2 p-2.5" />
           <Tab icon={Wheel} desc="Wheel" title="Wheel" props="md:p-1.5 p-2" />
